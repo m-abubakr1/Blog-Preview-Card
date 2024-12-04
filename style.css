@@ -55,3 +55,34 @@ img {
   font-weight: 800;
   border-radius: 0.5rem;
 }
+
+#container .date {
+  margin-top: 1rem;
+}
+#container h1 {
+  margin: 1rem 0;
+  color: var(--black);
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+#container .description {
+  color: var(--grey);
+  line-height: 1;
+}
+
+#container .flex-cont {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#container .flex-cont img {
+  width: 30px;
+}
+
+#container .flex-cont .auth-name {
+  font-weight: 800;
+}
