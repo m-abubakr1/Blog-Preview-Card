@@ -64,7 +64,6 @@ img {
 }
 #container .description {
   color: var(--grey);
-  line-height: 1;
 }
 
 #container .flex-cont {
