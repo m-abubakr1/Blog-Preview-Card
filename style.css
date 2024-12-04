@@ -86,3 +86,10 @@ img {
 #container .flex-cont .auth-name {
   font-weight: 800;
 }
+
+/* media-queries */
+@media (max-width: 375px) {
+  #container h1 {
+    font-size: 1.25rem;
+  }
+}
