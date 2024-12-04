@@ -1,6 +1,57 @@
-body {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #f5d04e;
+}
+:root {
+  --yellow: #f5d04e;
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 0%);
+}
+body {
+  background-color: var(--yellow);
+  min-height: 100vh;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  display: grid;
+  place-content: center;
+}
+img {
+  width: 100%;
+  display: block;
+}
+#container {
+  background-color: var(--white);
+  max-width: 400px;
+  padding: 1.5rem;
+  margin: 1rem;
+  position: relative;
+  border-radius: 1rem;
+  outline: 1px solid #000;
+}
+#container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  z-index: -1;
+  top: 15px;
+  right: -15px;
+  border-radius: 1rem;
+}
+
+#container img {
+  border-radius: 1rem;
+}
+
+#container .learning {
+  background-color: var(--yellow);
+  width: min-content;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+  font-weight: 800;
+  border-radius: 0.5rem;
 }
